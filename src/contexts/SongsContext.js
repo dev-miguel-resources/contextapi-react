@@ -6,7 +6,7 @@ export const SongsContext = createContext();
 const SongsContextProvider = ({ children }) => {
   const [doneFetch, setDoneFetch] = useState();
   const [currentQTrack, setCurrentQTrack] = useState("");
-  const [text, setText] = useState("Top Songs in US");
+  const [text, setText] = useState("Top Songs In US");
   const [tracks, setTracks] = useState([]);
 
   useEffect(() => getTopTracks(), []);

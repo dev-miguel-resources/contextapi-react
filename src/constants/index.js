@@ -8,6 +8,6 @@ const track_get = 'track.get?commontrack_id=';
 const api_key = '&apikey=49fccf44c19c893e5c828c4afe664d76';
 
 export const chartTracksGet = () => `${ cors_anywhere }${ base_url }${ chart_tracks_get }${ api_key }`;
-export const trackSearch = q_track => `${ cors_anywhere }${ base_url }${ track_search }${ q_track }${ track_search_params}${ api_key }`;
+export const trackSearch = q_track => `${ cors_anywhere }${ base_url }${ track_search }${ q_track }${ track_search_params }${ api_key }`;
 export const trackLyricsGet = commontrack_id => `${ cors_anywhere }${ base_url }${ track_lyrics_get }${ commontrack_id }${ api_key }`;
 export const trackGet = commontrack_id => `${ cors_anywhere }${ base_url }${ track_get }${ commontrack_id }${ api_key }`;

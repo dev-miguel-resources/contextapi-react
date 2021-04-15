@@ -5,6 +5,7 @@ import LyricsContextProvider from "./contexts/LyricsContext";
 import Header from "./components/Common/Header";
 import Songs from "./components/Songs";
 import Lyrics from "./components/Lyrics";
+import NotFound from "./components/NotFound";
 import "./assets/css/styles.css";
 
 const App = () => (
@@ -21,6 +22,7 @@ const App = () => (
           <Lyrics />
         </LyricsContextProvider>
       </Route>
+      <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
 );
